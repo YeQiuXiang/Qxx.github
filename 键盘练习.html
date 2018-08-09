@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="txt">
+    <p class="showtxt"></p>
+    <h2></h2>
+    <script>
+        document.querySelector('input').onkeyup = function(e){
+            document.querySelector('.showtxt').innerHTML=this.value;
+            if(e.keyCode==13){
+                document.querySelector('h2').innerHTML=this.value
+            }
+        }
+    </script>
+</body>
+</html>
